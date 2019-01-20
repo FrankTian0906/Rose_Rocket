@@ -107,7 +107,8 @@ class App extends Component {
   // PUT/BonusDriver API
   putBounsDriver(driver) {
     console.log("PUT BONUS API", driver);
-    fetch("/api/bonusDriver", {
+
+    fetch("/api/driver", {
       method: "PUT",
       mode: "CORS",
       body: JSON.stringify(driver),

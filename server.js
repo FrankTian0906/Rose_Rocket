@@ -5,7 +5,6 @@ const Stops = require("./data/Stops");
 const Legs = require("./data/Legs");
 const Driver = require("./data/Driver");
 const BonusDriver = require("./data/BonusDriver");
-const fs = require("fs");
 
 app.get("/api/stops", (req, res) => {
   console.log(res);
@@ -25,8 +24,15 @@ app.get("/api/bonusDriver", (req, res) => {
 });
 
 app.put("/api/driver", function(req, res) {
-  var company = req.body;
-  console.log("PUT driver", company);
+  var driver = req.body;
+  console.log("PUT driver", driver);
+  Driver = driver;
+});
+
+app.put("/api/bnusDriver", function(req, res) {
+  var driver = req.body;
+  console.log("PUT bouns driver", driver);
+  BonusDriver = driver;
 });
 
 const port = 5000;

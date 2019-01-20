@@ -62,7 +62,7 @@ class BounsDriverController extends Component {
 }
 
 BounsDriverController.propTypes = {
-  items: PropTypes.array.isRequired,
+  items: PropTypes.array,
   driver: PropTypes.object.isRequired,
   update: PropTypes.func
 };
