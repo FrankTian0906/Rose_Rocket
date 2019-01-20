@@ -237,13 +237,17 @@ class Maps extends React.Component {
 
           {value ? <Hint value={value} /> : null}
         </XYPlot>
-        <div>
-          <p>Total length: {this.timeAllLegs(legs)} h</p>
-          {this.state.driverLocationSign && (
-            <p>
-              Rest length: {this.timeRestLegs(driver, driverLocation, legs)} h
-            </p>
-          )}
+        <div className="card">
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">
+              Total length: {this.timeAllLegs(legs)}H
+            </li>
+            {this.state.driverLocationSign && (
+              <li className="list-group-item">
+                Rest length: {this.timeRestLegs(driver, driverLocation, legs)}H
+              </li>
+            )}
+          </ul>
         </div>
       </div>
     );
