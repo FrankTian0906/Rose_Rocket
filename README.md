@@ -1,6 +1,6 @@
 # Rose_rocket
 
-![Pic](http://http://github.com/FrankTian0906/Rose_Rocket/master/Sample.png "Sample page")
+![Pic](https://raw.githubusercontent.com/FrankTian0906/Rose_Rocket/master/Sample.png "Sample page")
 
 ## Install
 
