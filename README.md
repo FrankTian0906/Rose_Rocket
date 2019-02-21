@@ -18,6 +18,8 @@
 
 Have fun!
 
+`Attention!` If you need fix the server port number(default value is 5000), please make sure the port number in server.js and the proxy port number in client/package.json are same. Otherwise, the error `unexpected token p in json at position 0`will happen!
+
 ## Structure
 
 - Server:
